@@ -1,12 +1,13 @@
 function computePi() {
-	var N=document.getElementById("PiN").value, endResult;
-	if (N== ""){
-		alert("NaN");
+	var N=document.getElementById("PiN").value
+	var endResult=0;
+	if (N==""){
+		alert("Please input a number");
 		return;
 	}
-	endResult=(Math.round(Math.pi*Math.pow(10, N))/Math.pow(10, N)
+	endResult=(Math.round(Math.PI*Math.pow(10, N))/Math.pow(10, N));
 	document.getElementById("PiEndResult").innerHTML = endResult;
-	//error? Same code but push not accepted>
+
 }	
 function computeFibonacci() {
 	var N=document.getElementById("fibN").value, endResult="";
